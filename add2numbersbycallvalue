@@ -6,13 +6,7 @@ int input()
     scanf("%d",&a);
     return a;
 }
-int input1()
-{
-    int b;
-    printf("enter the 2st number:\n");
-    scanf("%d",&b);
-    return b;
-}c
+ 
 int compute(int a,int b)
 {
     int n;
@@ -27,7 +21,7 @@ int main()
 {
      int a,b,n;
      a=input();
-     b=input1();
+     b=input();
      n=compute(a,b);
      output(n);
 }
