@@ -1,29 +1,31 @@
-#include<stdio.h>
-int input()
+ #include<stdio.h>
+int input(int *a)
 {
-    int a;
-    printf("enter the 1st number:\n");
-    scanf("%d",&a);
-    return a;
+  printf("enter the 1st:\n");
+  scanf("%d",a);
+  return a;
 }
- 
-int compute(int a,int b)
+int compute(int n)
 {
-    int n;
-    n=a+b;
-    return n;
+  int a,b;
+  n=a+b;
+  return n;
 }
 void output(int n)
 {
-     printf("the number is=%d\n",n);
+  printf("the number is=%d",n);
 }
 int main()
 {
-     int a,b,n;
-     a=input();
-     b=input();
-     n=compute(a,b);
-     output(n);
+  int a,b,n;
+  a=input(&a)
+  b=input(&a)
+  n=compute(n)
+  output(n)
 }
+
+
+
+
 
 
