@@ -11,7 +11,7 @@
  n=n+1;
  return n;
  }
- int output(int r)
+ void output(int r)
  {
  printf("the number is=%d",r);
  }
@@ -20,6 +20,6 @@
  int n,r;
  n=input();
  n=compute(n);
- r=output(n);
+ output(n);
  }
 
