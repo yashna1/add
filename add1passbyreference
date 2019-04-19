@@ -1,0 +1,21 @@
+#include<stdio.h>
+void input(int *a)
+{
+    printf("enter the number:\n");
+    scanf("%d",a);
+}
+int compute(int a,int *n)
+{
+    *n=a+1;
+}
+void output(int n)
+{
+     printf("the number is=%d\n",n);
+}
+int main()
+{
+     int a,n;
+     input(&a);
+     compute(a,&n);
+     output(n);
+}
