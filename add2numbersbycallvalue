@@ -1,0 +1,27 @@
+#include<stdio.h>
+void input(int a,int b)
+{
+    printf("enter the 1st number:\n");
+    scanf("%d",a);
+    printf("enter the 2st number:\n");
+    scanf("%d",b);
+    return a,b;
+}
+int compute(int a,int b)
+{    
+    int n;
+    n=a+b;
+    return n;
+}
+void output(int n)
+{
+     printf("the number is=%d\n",n);
+}
+int main()
+{
+     int a,b,n;
+     input(a,b);
+     n=compute(a,b,n);
+     output(n);
+}
+
