@@ -1,14 +1,20 @@
 #include<stdio.h>
-void input(int a,int b)
+int input()
 {
+    int a;
     printf("enter the 1st number:\n");
-    scanf("%d",a);
-    printf("enter the 2st number:\n");
-    scanf("%d",b);
-    return a,b;
+    scanf("%d",&a);
+    return a;
 }
+int input1()
+{
+    int b;
+    printf("enter the 2st number:\n");
+    scanf("%d",&b);
+    return b;
+}c
 int compute(int a,int b)
-{    
+{
     int n;
     n=a+b;
     return n;
@@ -20,8 +26,10 @@ void output(int n)
 int main()
 {
      int a,b,n;
-     input(a,b);
-     n=compute(a,b,n);
+     a=input();
+     b=input1();
+     n=compute(a,b);
      output(n);
 }
+
 
