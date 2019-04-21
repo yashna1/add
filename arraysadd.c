@@ -6,7 +6,7 @@ printf("enter the number of array elements:");
 scanf("%d",&n);
 return n;
 }
-int input1(int n)
+int *input1(int n)
 {
 int i,a[i];
 for(i=0;i<n;i++)
@@ -24,6 +24,10 @@ int main()
 {
 n=input();
 int n,a[i];
-a[i]=input1(n);
+*a[i]=input1(n);
+for(i=0;i<n;i++)
+{
+printf("%d",&a[i])
+}
 output(a);
 }
