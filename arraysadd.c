@@ -24,6 +24,6 @@ int main()
 {
 n=input();
 int n,a[i];
-input1(a);
+a[i]=input1(n);
 output(a);
 }
