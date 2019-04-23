@@ -6,28 +6,27 @@ printf("enter the number of array elements:");
 scanf("%d",&n);
 return n;
 }
-int *input1(int n)
+int *input1(int *arr,int n)
 {
-int i,a[i];
+int i;
 for(i=0;i<n;i++)
 {
-printf("enter the array elements:=%d",&a[i]);
-scanf("%d",&a[i]);
+printf("enter the array elements:=%d");
+scanf("%d",&arr[i]);
 }
-return a[i];
+return arr;
 }
-void output(int a[i])
+void output(int *arr,int n)
 {
-printf("the array elements are:=%d",a[i]);
+int i;
+for(i=0;i<n;i++)
+{
+printf("the array elements are:=%d",arr);
+}
 }
 int main()
 {
-n=input();
-int n,a[i];
-*a[i]=input1(n);
-for(i=0;i<n;i++)
-{
-printf("%d",&a[i])
-}
-output(a);
+intn=input();
+input1(arr,n);
+output(arr,n);
 }
