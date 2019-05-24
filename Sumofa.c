@@ -27,13 +27,13 @@ for(i=0;i<n;i++)
 void output(int n,int *a,int sum)
 {
 
-        printf("the sum of ");
+        printf("the sum of  %d", a[0]);
         int i;
-        for(i=0;i<n;i++)
+        for(i=1;i<n;i++)
         {
-         printf("%d+",a[i]);
+         printf(" + %d",a[i]);
         }
-        printf("=%d",sum);
+        printf(" = %d",sum);
 }
 
 int  main()
