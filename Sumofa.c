@@ -8,8 +8,8 @@ int input()
 }
 void input1(int *a,int n)
 {
-int i;
-for(i=0;i<n;i++)
+        int i;
+   for(i=0;i<n;i++)
 {
         printf("enter the %d array element:",i);
         scanf("%d",&a[i]);
@@ -18,30 +18,30 @@ for(i=0;i<n;i++)
 int compute(int n,int *a)
 {
         int i,sum=0;
-for(i=0;i<n;i++)
+   for(i=0;i<n;i++)
 {
         sum=sum+a[i];
 
-}return  sum;
+}
+        return  sum;
 }
 void output(int n,int *a,int sum)
 {
 
         printf("the sum of  %d", a[0]);
         int i;
-        for(i=1;i<n;i++)
+   for(i=1;i<n;i++)
         {
          printf(" + %d",a[i]);
         }
         printf(" = %d",sum);
 }
-
 int  main()
 {
 
         int n=input();
         int  a[n];
         input1(a,n);
-int sum=compute(n,a);
+        int sum=compute(n,a);
         output(n,a,sum);
 }
